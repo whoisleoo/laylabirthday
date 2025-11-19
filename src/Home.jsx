@@ -8,10 +8,17 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center gap-8 p-8">
-      <div className="text-center space-y-3">
+    <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center gap-8 p-8 relative">
+      {/* Background decorativo no topo */}
+      <div
+        className="absolute top-0 left-0 w-full h-20 bg-no-repeat bg-contain bg-center"
+        style={{ backgroundImage: "url(/nav.png)" }}
+      ></div>
+
+      {/* Título */}
+      <div className="text-center space-y-3 z-10">
         <h1
-          className="text-4xl md:text-5xl font-bold text-white tracking-wide"
+          className="text-4xl md:text-5xl font-bold text-white tracking-wide "
           style={{ fontFamily: "Birthday3" }}
         >
           Você foi convidado!
@@ -21,7 +28,8 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="flex items-center justify-center">
+      {/* Cartão */}
+      <div className="flex items-center justify-center z-10">
         <img
           src="/cartao.png"
           alt="Convite Layla 15 anos"
@@ -30,9 +38,11 @@ const Home = () => {
         />
       </div>
 
-      <div className="text-center animate-pulse">
-        <p className="text-gray-500 text-md">🌹 Toque para abrir</p>
-      </div>
+      {/* Background decorativo no rodapé */}
+      <div
+        className="absolute bottom-0 left-0 w-full h-20 bg-no-repeat bg-contain bg-center"
+        style={{ backgroundImage: "url(/footer.png)" }}
+      ></div>
     </div>
   );
 };
