@@ -1,14 +1,10 @@
 @import "tailwindcss";
-
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #000;
 }
 
-/* Estilos globais */
 body {
   margin: 0;
   padding: 0;
@@ -20,11 +16,14 @@ body {
   overflow-x: hidden;
 }
 
+.fundo {
+  background-color: #000;
+}
+
 #root {
   min-height: 100vh;
 }
 
-/* Animações personalizadas */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -78,8 +77,6 @@ body {
 .animate-floating {
   animation: floating 3s ease-in-out infinite;
 }
-
-/* Scrollbar customizada */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -97,12 +94,10 @@ body {
   background: #b91c1c;
 }
 
-/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Remove outline do focus para touch devices */
 @media (hover: none) {
   button:focus,
   a:focus {
