@@ -125,3 +125,10 @@ html {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "cronde";
+  src: url("/CRONDE.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
